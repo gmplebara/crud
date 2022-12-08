@@ -1,0 +1,59 @@
+{
+  "requiresCompatibilities": [
+      "EC2"
+  ],
+  "inferenceAccelerators": [],
+  "containerDefinitions": [
+      {
+          "name": "crud",
+          "image": "994610707984.dkr.ecr.eu-west-1.amazonaws.com/crud/crud:latest",
+          "memory": "128",
+          "cpu": "1",
+          "resourceRequirements": [
+              {
+                  "type": "GPU",
+                  "value": "1"
+              }
+          ],
+          "essential": true,
+          "portMappings": [
+              {
+                  "hostPort": "80",
+                  "containerPort": "3000",
+                  "protocol": "tcp"
+              }
+          ],
+          "entryPoint": [
+              "yarn start"
+          ],
+          "command": [],
+          "environment": null,
+          "environmentFiles": [],
+          "secrets": null,
+          "mountPoints": null,
+          "volumesFrom": null,
+          "hostname": null,
+          "user": null,
+          "workingDirectory": "/usr/app",
+          "extraHosts": null,
+          "logConfiguration": null,
+          "ulimits": null,
+          "dockerLabels": null,
+          "dependsOn": null,
+          "healthCheck": {
+              "command": [
+                  "curl -f http://localhost:3000/"
+              ]
+          },
+          "repositoryCredentials": null
+      }
+  ],
+  "volumes": [],
+  "networkMode": null,
+  "memory": null,
+  "cpu": null,
+  "placementConstraints": [],
+  "family": "crud",
+  "taskRoleArn": "",
+  "tags": []
+}

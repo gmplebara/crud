@@ -1,0 +1,9 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "Alta Baja Modificacion Borrar",
+  "main": "index.js",
+  "repository": "https://github.com/gmplebara/crud.git",
+  "author": "gmplebara <100225126+gmplebara@users.noreply.github.com>",
+  "license": "MIT"
+}
