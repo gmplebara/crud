@@ -6,7 +6,7 @@
       "dnsSearchDomains": null,
       "environmentFiles": null,
       "logConfiguration": null,
-      "entryPoint": [],
+      "entryPoint": ["yarn start"],
       "portMappings": [],
       "command": [],
       "linuxParameters": null,
@@ -40,7 +40,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "crud"
+      "name": "crud-test"
     }
   ],
   "placementConstraints": [],
